@@ -13,7 +13,6 @@ weatherForm.addEventListener('submit', (e) => {
     fetch("/weather?location="+location).then((response) => {
         response.json().then((data) => {
             weatherResult.textContent = data.temperature +" °C"
-
         })
     })
 })
